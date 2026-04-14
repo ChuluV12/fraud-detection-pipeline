@@ -4,7 +4,7 @@ A production-style, end-to-end fraud detection system that processes a simulated
 
 ---
 
-## 📸 Overview
+##  Overview
 
 This project simulates a real-world financial fraud detection pipeline — from raw transaction ingestion through ML scoring to a live monitoring dashboard — built entirely in Python.
 
