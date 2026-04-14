@@ -1,4 +1,4 @@
-# 🛡️ Real-Time Fraud Detection Pipeline
+#  Real-Time Fraud Detection Pipeline
 
 A production-style, end-to-end fraud detection system that processes a simulated live transaction stream, scores each transaction using machine learning, and visualises results on an interactive dashboard.
 
@@ -16,7 +16,7 @@ Transaction Stream ──► PySpark Processing ──► ML Scoring ──► S
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Detail |
 |---|---|
@@ -30,7 +30,7 @@ Transaction Stream ──► PySpark Processing ──► ML Scoring ──► S
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python 3** — core language
 - **PySpark** — distributed streaming processing layer
@@ -43,7 +43,7 @@ Transaction Stream ──► PySpark Processing ──► ML Scoring ──► S
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Run in Google Colab (recommended)
 
@@ -81,7 +81,7 @@ jupyter notebook Fraud_pipeline.ipynb
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fraud-detection-pipeline/
@@ -94,7 +94,7 @@ fraud-detection-pipeline/
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### 1. Transaction Simulation
 `TransactionSimulator` generates a stream of synthetic transactions for 1,000 users. Each user has a spending profile (typical amount range, home location, active hours). Fraud is injected at ~10% across three patterns:
@@ -125,7 +125,7 @@ Flagged transactions (MEDIUM and above) are written to SQLite. The Streamlit das
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 ```
 Risk Level Distribution:
@@ -141,7 +141,7 @@ Processing rate:  ~8.3 txns/sec
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 Key parameters in Cell 3 (`CONFIG` dict):
 
@@ -155,13 +155,13 @@ Key parameters in Cell 3 (`CONFIG` dict):
 
 ---
 
-## 🔒 Security Note
+##  Security Note
 
 This notebook previously contained a hardcoded ngrok token which has been revoked. **Never commit API keys or tokens to a public repository.** Use environment variables or a `.env` file instead (already excluded in `.gitignore`).
 
 ---
 
-## 📈 Potential Extensions
+##  Potential Extensions
 
 - Replace SQLite with PostgreSQL or Kafka for true production throughput
 - Add a model retraining loop on confirmed fraud labels
@@ -171,7 +171,7 @@ This notebook previously contained a hardcoded ngrok token which has been revoke
 
 ---
 
-## 👤 Author
+##  Author
 
 Built as a data engineering / ML portfolio project demonstrating:
 real-time stream processing · anomaly detection · supervised classification · dashboard development
